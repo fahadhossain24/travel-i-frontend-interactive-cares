@@ -3,7 +3,7 @@ import Header from "../../shered/Header";
 
 const MainLayout = () => {
     return (
-        <div className="h-[100vh] overflow-y-hidden">
+        <div className="h-[100vh] md:overflow-y-hidden">
             <Header/>
             <Outlet/>
         </div>

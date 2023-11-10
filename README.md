@@ -1,8 +1,9 @@
-# React + Vite
+# Happy travel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The given project was travel related. 2 days were given for the project. But due to my company project I get only 13 hours for the project. By the way Alhamdulillah I can almost complete the requirements. There are some leggings. But I was trying to my best within those time.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# how to run the project
+
+First of all you have to do login to the website. then search destination from available destinations. after search then open a modal to taking user information for ture booking. after completing the booking then user get successfull message.  
+

@@ -35,7 +35,7 @@ const Navbar = () => {
     return (
         <div className="flex justify-between px-6 bg-primary items-center h-[70px]">
             <div>
-                <h2 className="text-2xl font-bold text-[#505050]"><span className="text-secondary">H</span>appy <span className="text-secondary">T</span>ravel</h2>
+                <h2 className="text-2xl font-bold text-[#505050] sm:hidden md:block"><span className="text-secondary">H</span>appy <span className="text-secondary">T</span>ravel</h2>
             </div>
             <div>
                 <ul className="flex gap-6 py-5 text-lg font-semibold text-secondary">
