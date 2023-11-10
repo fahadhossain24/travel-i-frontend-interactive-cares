@@ -26,9 +26,6 @@ const Navbar = () => {
         {
             name: 'Destination',
             path: '/destination'
-        }, {
-            name: 'Details',
-            path: '/details'
         },
         {
             name: 'About',
@@ -44,7 +41,7 @@ const Navbar = () => {
                 <ul className="flex gap-6 py-5 text-lg font-semibold text-secondary">
                     {
                         navItems.map((item, index) => (
-                            <Link key={index} to={item.path} className="hover:border-b-2 hover:border-secondary h-[30px] transition-all duration-300">{item.name}</Link>
+                            <Link key={index} to={item.path} className="hover:border-b-2 hover:border-secondary h-[30px] transition-all duration-300 cursor-pointer">{item.name}</Link>
                         ))
                     }
                 </ul>
