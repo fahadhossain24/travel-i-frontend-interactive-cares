@@ -1,6 +1,22 @@
+import { Icon } from "@iconify/react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Cookies from "universal-cookie";
 
 const Navbar = () => {
+    const cookie = new Cookies()
+    const [user, setUser] = useState(false)
+    const token = cookie.get('token', { path: '/' })
+
+    useEffect(() => {
+
+        if (token) {
+            setUser(true);
+        } else {
+            setUser(false);
+        }
+    }, [token, user])
+
     const navItems = [
         {
             name: 'Home',
@@ -33,7 +49,12 @@ const Navbar = () => {
                 </ul>
             </div>
             <div>
-                    <Link to='/login' className="text-lg font-semibold">Login</Link>
+                {
+                    !user ? <Link to='/login' className="text-lg font-semibold hover:border-b-2 hover:border-secondary">Login</Link> : <div className="flex gap-2 items-center">
+                        <Icon icon="ic:baseline-account-circle" className="text-4xl cursor-pointer" />
+                        <button onClick={() => { cookie.remove('token', { path: '/' }); setUser(false) }} className="text-lg font-semibold hover:border-b-2 hover:border-secondary"> Logout</button>
+                    </div>
+                }
             </div>
         </div>
     );
