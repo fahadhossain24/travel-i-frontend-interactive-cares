@@ -6,6 +6,18 @@ export default {
   ],
   theme: {
     extend: {},
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px',
+    },
+    colors: {
+      primary: '#ff69b4',
+      secondary: '#0054D2',
+      'white': 'white',
+      'green': 'green'
+    },
   },
   plugins: [],
 }
