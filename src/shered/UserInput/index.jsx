@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 
-const UserInput = ({ label, name, inputType, customInputStyle, customLabelStyle, required, register, formState }) => {
+const UserInput = ({ label, name, inputType, customInputStyle, value, customLabelStyle, required, register, formState }) => {
     const isError = formState.errors[name];
     console.log(isError)
     return (
@@ -11,6 +11,7 @@ const UserInput = ({ label, name, inputType, customInputStyle, customLabelStyle,
             <input
                 type={inputType || 'text'}
                 className={`${customInputStyle}  w-[100%] mx-auto h-[25px] py-4 px-3 outline-primary border-[1px] border-black rounded-md mt-1 ${isError ? 'border-primary' : ''}`}
+                defaultValue={value}
                 {...register(name, { required: true })}
             />
             {isError && <p className='text-primary'>this field is required</p>}

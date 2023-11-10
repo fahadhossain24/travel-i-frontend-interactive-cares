@@ -39,8 +39,8 @@ const Registration = () => {
                     <h2 className="text-4xl text-primary font-semibold mb-2">Registration</h2>
                     <form onSubmit={handleSubmit(handleRegister)}>
                         <UserInput label='Full Name' inputType='name' name='name' register={register} formState={formState} />
-                        <UserInput label='Email' inputType='email' name='email' register={register} formState={formState} />
-                        <UserInput label='password' inputType='password' name='password' register={register} formState={formState} />
+                        <UserInput label='Email' inputType='email' name='email' value='eve.holt@reqres.in' register={register} formState={formState} />
+                        <UserInput label='password' inputType='password' name='password' value='pistol' register={register} formState={formState} />
                         <input type="submit" value="Registration" className="block mx-auto bg-primary py-1 px-2 rounded-md mt-2 font-semibold hover:bg-[#f559b9] cursor-pointer" />
                     </form>
                 </div>

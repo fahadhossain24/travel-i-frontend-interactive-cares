@@ -1,21 +1,22 @@
 import { Icon } from "@iconify/react";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Cookies from "universal-cookie";
 
 const Navbar = () => {
     const cookie = new Cookies()
     const [user, setUser] = useState(false)
     const token = cookie.get('token', { path: '/' })
+    const navigate = useNavigate()
 
     useEffect(() => {
-
         if (token) {
             setUser(true);
         } else {
             setUser(false);
+            navigate('/login')
         }
-    }, [token, user])
+    }, [token, user, navigate])
 
     const navItems = [
         {
