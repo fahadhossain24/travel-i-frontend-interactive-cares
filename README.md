@@ -7,3 +7,4 @@ The given project was travel related. 2 days were given for the project. But due
 
 First of all you have to do login to the website. then search destination from available destinations. after search then open a modal to taking user information for ture booking. after completing the booking then user get successfull message.  
 
+Live project link: https://dazzling-granita-fc5a2f.netlify.app/
