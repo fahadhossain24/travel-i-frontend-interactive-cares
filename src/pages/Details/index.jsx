@@ -2,7 +2,7 @@
 const Details = () => {
     return (
         <div>
-            this is details page
+            <h2>this is details page<h2/>
         </div>
     );
 };
