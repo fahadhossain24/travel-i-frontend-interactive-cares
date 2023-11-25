@@ -20,6 +20,7 @@ const Home = () => {
         }
     };
 
+    // close modal button
     function closeModal() {
         setModalIsOpen(false);
     }
@@ -46,7 +47,7 @@ const Home = () => {
                             >
                                 <option value="none" disabled>
                                     {item.placeholderOption}
-                                </option>
+                                </option> 
                                 {item.options.map((item, index) => (
                                     <option key={index} value={item.value} className='font-semibold'>
                                         {item.option}
